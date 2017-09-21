@@ -5,21 +5,23 @@ class Program
 {
     static void Main()
     {
-        int num;
-        Console.Write("Enter number:");
-        num = int.Parse(Console.ReadLine());
-        check(ref num);
-        Console.WriteLine(num);
+        int num1,num2 ,count,a ;
+        int[] i = new int[100];
+        Console.Write("Enter Number start:");
+        num1 = int.Parse(Console.ReadLine());
+        Console.Write("Enter Number end:");        
+        num2 = int.Parse(Console.ReadLine());
+        while (num1<=num2)
+        {
+            a=num1++;
+            count = a % 7;
+            if(count == 0)
+            {                                         
+                Console.WriteLine("{0}",count);
+               
+            }            
+        }
         Console.ReadLine();
     }
-    static void check(ref int i)
-    {
-        if (i % 2 == 0)
-        {
-            Console.WriteLine("Even number");
-        }
-        else
-            Console.WriteLine("Odd number");
-    }
-
+   
 }
