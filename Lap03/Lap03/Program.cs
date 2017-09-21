@@ -9,8 +9,7 @@ namespace Labweek06
     {
         static void Main(string[] args)
         {
-            double weight = 0d;
-
+            double weight = 0d;            
             ask(ref weight);
             cal(ref weight);
             Console.WriteLine("Weight on Moon is : {0}", weight);
