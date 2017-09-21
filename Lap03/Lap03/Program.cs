@@ -6,12 +6,20 @@ class Program
     static void Main()
     {
 
+        long myLong = long.MaxValue;
+        int myInt = (int)myLong;   // Explicit conversion
 
-        int myInt = 5;
-        Console.WriteLine(myInt);
-        long myLong = myInt;
+        float heightInMeters = 1.74f; // Explicit conversion
+        double maxHeight = heightInMeters; // Implicit
+        double minHeight = (double)heightInMeters; // Explicit
+        float actualHeight = (float)maxHeight; // Explicit
+
         Console.WriteLine(myLong);
-        Console.WriteLine(myLong + myInt);
+        Console.WriteLine(myInt);
+        Console.WriteLine(heightInMeters);
+        Console.WriteLine(maxHeight);
+        Console.WriteLine(minHeight);
+        Console.WriteLine(actualHeight);
 
     }
 
