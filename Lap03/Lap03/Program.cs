@@ -16,7 +16,7 @@ class Program
             a=num1++;
             count = a % 7;
             if(count == 0)
-            {                                         
+            {                                            
                 Console.WriteLine("{0}",count);
                
             }            
