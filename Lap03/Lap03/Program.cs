@@ -6,12 +6,14 @@ class Program
     static void Main()
     {
         int val;   // do not initial value
-        refMethod(out val);
-        Console.WriteLine(val);
+        
+        Console.WriteLine("Enter number:");
+        val = int.Parse(Console.ReadLine());
+        refMethod(ref val);
         Console.ReadLine();
     }
 
-    static void refMethod(out int i)
+    static void refMethod(ref int i)
     {
         i = i + 1;
     }
