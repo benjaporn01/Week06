@@ -8,7 +8,7 @@ class Program
 
         double d = 5e9d;
         Console.WriteLine(d);
-        int i = (int)d;
+        int i = checked((int)d);
         Console.WriteLine(i);
 
     }
